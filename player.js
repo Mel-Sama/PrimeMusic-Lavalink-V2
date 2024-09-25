@@ -6,11 +6,11 @@ const config = require("./config.js");
 
 function initializePlayer(client) {
     const nodes = config.nodes.map(node => ({
-        name: node.name,
-        host: node.host,
-        port: node.port,
-        password: node.password,
-        secure: node.secure,
+        name: nodes.name,
+        host: nodes.host,
+        port: nodes.port,
+        password: nodes.password,
+        secure: nodes.secure,
         reconnectTimeout: 5000,
         reconnectTries: Infinity
         
